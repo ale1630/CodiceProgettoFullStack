@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #17c556b4; /* Sfondo verde chiaro */
+    width: 100%; /* Occupa tutta la larghezza della finestra */
+    padding: 10px 0; /* Aggiungi spazio sopra e sotto alla navbar */
+    position: fixed; /* Fissa la navbar in alto */
+    top: 0; /* Posiziona la navbar all'inizio della pagina */
+    z-index: 1000; /* Assicura che la navbar sia sopra agli altri elementi */
+}
+
+
+/* Stile per il contenitore del form di accesso */
+.signin-form {
+    width: 300px; /* Riduci la larghezza del form */
+    margin: 350px auto 0; /* Centra il form orizzontalmente e aggiungi spazio sopra */
+    padding: 100px; /* Spazio interno */
+    border-radius: 20px; /* Bordi arrotondati */
+    background-image: url("immSfondo.jpeg"); /* Imposta l'immagine di sfondo */
+    background-color: rgba(255, 255, 255, 0.5); /* Colore di sfondo trasparente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombra */
+    background-size: cover; /* Adatta l'immagine di sfondo alla dimensione del contenitore */
+    background-position: center; /* Centra l'immagine di sfondo */
+    text-align: center; /* Centra i contenuti all'interno del form */
+}
+
+/* Stile per i campi di input */
+.form-control {
+    width: calc(100% - 40px); /* Occupa quasi tutta la larghezza disponibile, considerando il padding */
+    margin-bottom: 15px; /* Spazio tra i campi */
+    padding: 15px; /* Aumenta lo spazio interno */
+    border-radius: 20px; /* Bordi arrotondati */
+    border: 1px solid #ccc; /* Bordo */
+    display: inline-block; /* Mostra i campi di input su una riga */
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo trasparente */
+}
+
+/* Stile per il pulsante di accesso */
+.btn-primary {
+    width: calc(100%); /* Occupa quasi tutta la larghezza disponibile, considerando il padding */
+    border-radius: 20px; /* Bordi arrotondati */
+    padding: 15px; /* Aumenta lo spazio interno */
+    background-color: rgba(0, 123, 255, 0.5); /* Colore di sfondo trasparente */
+    border: 1px solid rgba(0, 123, 255, 0.5); /* Bordo trasparente */
+    color: #fff; /* Colore del testo */
+    font-weight: bold; /* Grassetto */
+    display: inline-block; /* Mostra il pulsante su una riga */
+}
+
+
+/* Stile per l'icona dell'occhio */
+.field-icon {
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+
+/* Posizionamento per il contenitore del form su schermi piccoli */
+@media (max-width: 576px) {
+    .signin-form {
+        width: 90%; /* Riduci la larghezza del form */
+    }
+}
