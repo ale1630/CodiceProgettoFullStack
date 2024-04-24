@@ -30,6 +30,18 @@ body {
 .locale h2 {
     margin-top: 0;
 }
+.scopri {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
 .prenota {
     background-color: #007bff;
     color: #fff;
