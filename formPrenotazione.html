@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Prenotazione</title>
+
+        <link rel="stylesheet" href="listalocali.css">
+        
+    </head>
+    
+    <body>
+        <br>
+
+        <center>
+
+            <div class="areaPersonale">Area Personale</div>
+
+            <br>
+            <br>
+        </center>
+
+        <div id="form">
+
+            <form method="post">
+                Nome: <!--mettere quello del login --> <br><br>
+
+                <label for="data">Giorno:</label>
+                <input type="date" id="data" name="data"><br><br>
+            
+                <label for="ora">Ora:</label>
+                <input type="time" id="ora" name="ora"><br><br>
+
+                <label for="posti">Numero di posti:</label>
+                <input type="number" id="posti" name="posti" min="1" max="100" required> <br><br>
+                
+                <center>
+                    <button type="submit" id="disponibilitaButton" > Verifica Disponibilità! </button>
+                </center>
+            </form>
+        </div>
+        
+    </body>
+</html>
