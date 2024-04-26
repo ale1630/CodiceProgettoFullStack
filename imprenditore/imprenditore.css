@@ -1,10 +1,99 @@
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .navbar {
-    background-color: #17c556b4;
-    width: 100%;
-    /* position: fixed; */
-    top: 0;
-    z-index: 1000;
-  }
+    margin: 0; /* Remove margin */
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.bbMare {
+    float: right; 
+    width: 200px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: #000000 !important; 
+}
+
+.nav-link:hover {
+    color: #ff0090 !important; 
+}
+
+.btn-primary {
+    margin-left: 15px;
+}
+
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.icons a:hover img {
+    opacity: 0.7;
+}
+
+.icons svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.logo img {
+    height: auto;
+}
 
   .body {
     background-image: url("immSfondo.jpeg");
