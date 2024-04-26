@@ -21,91 +21,14 @@
     padding: 10px 20px;
 }
 
-.bbMare {
-    float: right; 
-    width: 200px;
-}
 
-.navbar-brand img {
-    max-height: 50px;
-}
-
-.navbar-nav {
-    margin-left: auto;
-}
-
-.navbar-nav .nav-item {
-    margin-left: 15px;
-}
-
-.nav-link {
-    color: #000000 !important; 
-}
-
-.nav-link:hover {
-    color: #ff0090 !important; 
-}
-
-.btn-primary {
-    margin-left: 15px;
-}
-
-.navbar {
-    background-color: #26a5408e;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-.menu {
-    flex-grow: 1;
-}
-
-.menu a {
-    background-color: #26a5408e;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 10px 0;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-}
-
-.icons a {
-    margin-left: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-.icons a:hover img {
-    opacity: 0.7;
-}
-
-.icons svg {
-    width: 20px;
-    height: 20px;
-    fill: white;
-}
-
-.logo img {
-    height: auto;
-}
-
-  .body {
-    background-image: url("immSfondo.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-
+/* --------------
+   #FORM
+----------------- */
   .signin-form {
     width: 300px;
     margin: 100px auto 0;
-    padding: 50px;
+    /* padding: 50px; */
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
