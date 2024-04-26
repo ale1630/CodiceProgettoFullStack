@@ -51,7 +51,7 @@
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: #26a5408e;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .menu a {
-    color: #ffffff;
+    background-color: #26a5408e;
     text-decoration: none;
     margin: 0 10px;
     padding: 10px 0;
