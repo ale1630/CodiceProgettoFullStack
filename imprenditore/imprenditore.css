@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #17c556b4;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.body {
+    background-image: url("immSfondo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Imposta l'altezza al 100% della finestra */
+}
+
+.signin-form {
+    width: 300px;
+    margin: 100px auto 0;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Trasparenza leggera */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-control {
+    width: calc(100% - 40px);
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary {
+    width: calc(100%);
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(0, 123, 255, 0.5);
+    border: 1px solid rgba(0, 123, 255, 0.5);
+    color: #fff;
+    font-weight: bold;
+}
+
+.field-icon {
+    cursor: pointer;
+}
+
+/* Posizionamento per il contenitore del form su schermi piccoli */
+@media (max-width: 576px) {
+    .signin-form {
+        width: 90%;
+    }
+}
