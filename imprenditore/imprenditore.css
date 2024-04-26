@@ -22,7 +22,7 @@
 }
 
 .body{
-    background-image: 'sfondo.jpg';
+    background-image: url( 'sfondo.jpg' );
 }
 
 /* --------------
