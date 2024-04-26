@@ -7,14 +7,16 @@
     z-index: 1000; /* Assicura che la navbar sia sopra agli altri elementi */
 }
 
-
+.body{
+    background-image: url("immSfondo.jpeg"); /* Imposta l'immagine di sfondo */
+}
 /* Stile per il contenitore del form di accesso */
 .signin-form {
     width: 300px; /* Riduci la larghezza del form */
     margin: 350px auto 0; /* Centra il form orizzontalmente e aggiungi spazio sopra */
     padding: 100px; /* Spazio interno */
     border-radius: 20px; /* Bordi arrotondati */
-    background-image: url("immSfondo.jpeg"); /* Imposta l'immagine di sfondo */
+    /* background-image: url("immSfondo.jpeg"); Imposta l'immagine di sfondo */
     background-color: rgba(255, 255, 255, 0.5); /* Colore di sfondo trasparente */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombra */
     background-size: cover; /* Adatta l'immagine di sfondo alla dimensione del contenitore */
