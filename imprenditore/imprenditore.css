@@ -23,7 +23,7 @@
 
 .sfondo{
     background-color: coral;
-    background-image: url( 'sfondo.jpg' );
+    /* background-image: url( 'sfondo.jpg' ); */
     height:auto;
     width:auto;
 }
