@@ -23,6 +23,8 @@
 
 .sfondo{
     background-image: url( 'sfondo.jpg' );
+    height:auto;
+    width:auto;
 }
 
 /* --------------
