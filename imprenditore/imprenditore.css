@@ -79,5 +79,7 @@
   }
 
 .aggiungi{
-  color: #26a5408e;
+  background-color: #26a5408e;
+  border-radius: 20px;
+  padding: 15px;
 }
