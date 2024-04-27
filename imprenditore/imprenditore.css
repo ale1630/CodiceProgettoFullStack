@@ -78,6 +78,10 @@
     }
   }
 
+.aggLocale{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .aggiungi{
   background-color: #26a5408e;
   border-radius: 20px;
