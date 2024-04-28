@@ -20,7 +20,7 @@ function registraDati() {
 
     // Costruire il riepilogo dei dati
     riepilogoDiv.innerHTML = `
-        <h2>${nome}</h2>
+        <h2>Ristorante: ${nome}</h2>
         <p><strong>Nome:</strong> ${nome}</p>
         <p><strong>Posti:</strong> ${posti}</p>
         <p><strong>Via:</strong> ${via}</p>
