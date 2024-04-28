@@ -9,6 +9,21 @@
         .hidden {
             display: none;
         }
+        #tabella-dati {
+            width: 100%; /* Imposta la larghezza della tabella al 100% della larghezza del contenitore */
+            font-size: 16px; /* Modifica la dimensione del testo nella tabella */
+        }
+
+        #tabella-dati input {
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            padding: 10px; /* Aggiungi spazio intorno ai bordi degli input */
+        }
+
+        #tabella-dati button {
+            padding: 10px 20px; /* Aggiungi spazio intorno al pulsante */
+            font-size: 16px; /* Modifica la dimensione del testo nel pulsante */
+        }
+
     </style>
 </head>
 <body>
@@ -21,11 +36,12 @@
     <div class="position-absolute top-50 start-50 translate-middle">
         <h2>Aggiungi il tuo locale</h2>
         <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
-
+        <br>
         <!-- Tabella per l'inserimento dei dati -->
         <table id="tabella-dati" class="hidden">
             <tr>
-                <td><input type="text" id="nome" placeholder="Nome"></td>
+                <td>NOME:<input type="text" id="nome" placeholder="Nome"></td>
+                <Br>
                 <td><input type="number" id="posti" placeholder="Posti"></td>
                 <td><input type="text" id="via" placeholder="Via"></td>
                 <td><input type="text" id="civico" placeholder="Civico"></td>
