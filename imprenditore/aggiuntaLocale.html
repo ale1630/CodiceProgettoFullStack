@@ -1,20 +1,47 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="imprenditore.css">
-    </head>
-    <body>
-<!-------------------------
-# navbar
---------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <!-- <a class="navbar-brand" href="#"><img class="bbMare" src="immagini/logo.png" width="200px" height="60px"style="margin-left: 160px;"></a> -->
-            <div class="container pl-0">
-            <strong> <H3>THE FORK</H3></strong>    </div>
-        </nav>
-
-        <div class="position-absolute top-50 start-50 translate-middle">
-        <h2>Aggiungi il tuo locale</h2>
-            <button type="submit" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi il tuo locale</title>
+    <link rel="stylesheet" href="imprenditore.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container pl-0">
+            <strong><h3>THE FORK</h3></strong>
         </div>
-    </body>
+    </nav>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <h2>Aggiungi il tuo locale</h2>
+        <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
+
+        <!-- Tabella per l'inserimento dei dati -->
+        <table id="tabella-dati" class="hidden">
+            <tr>
+                <td><input type="text" id="nome" placeholder="Nome"></td>
+                <td><input type="number" id="posti" placeholder="Posti"></td>
+                <td><input type="text" id="via" placeholder="Via"></td>
+                <td><input type="text" id="civico" placeholder="Civico"></td>
+                <td><input type="text" id="paese" placeholder="Paese"></td>
+                <td><input type="text" id="cap" placeholder="CAP"></td>
+                <td><input type="text" id="telefono" placeholder="Numero di Telefono"></td>
+                <td><button type="button" onclick="registraDati()">Registra</button></td>
+            </tr>
+        </table>
+
+        <!-- Riepilogo dei dati -->
+        <div id="riepilogo" class="hidden">
+            <h2>Riepilogo Dati</h2>
+            <p><strong>Nome:</strong> <span id="riepilogo-nome"></span></p>
+            <p><strong>Posti:</strong> <span id="riepilogo-posti"></span></p>
+            <p><strong>Via:</strong> <span id="riepilogo-via"></span></p>
+            <p><strong>Civico:</strong> <span id="riepilogo-civico"></span></p>
+            <p><strong>Paese:</strong> <span id="riepilogo-paese"></span></p>
+            <p><strong>CAP:</strong> <span id="riepilogo-cap"></span></p>
+            <p><strong>Numero di Telefono:</strong> <span id="riepilogo-telefono"></span></p>
+        </div>
+    </div>
+</body>
 </html>

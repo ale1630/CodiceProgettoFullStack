@@ -87,3 +87,6 @@
   border-radius: 20px;
   padding: 15px;
 }
+.hidden {
+  display: none;
+}
