@@ -24,6 +24,14 @@
     height:auto;
     width:auto;
 }
+
+
+
+
+
+
+
+
 /* CSS per il layout */
 body {
     overflow-x: hidden; /* Nasconde lo scrolling orizzontale */
@@ -37,13 +45,8 @@ body {
 }
 
 #tabella-dati {
-    width: 40%; /* Larghezza ridotta per il form */
+    width: 100%; /* Larghezza ridotta per il form */
     font-size: 16px;
-}
-
-/* Stile delle celle della tabella */
-#tabella-dati td {
-    padding: 8px; /* Ridotto lo spazio interno alle celle */
 }
 
 /* Stile degli input nella tabella */
@@ -63,6 +66,17 @@ body {
     border-radius: 5px;
 }
 
+/* Stile per il contenitore del form */
+#form-container {
+    width: 60%; /* Larghezza del contenitore del form */
+    margin: 20px auto; /* Margine superiore e inferiore */
+}
+
+/* Nascondi il contenitore del form di default */
+#form-container.hidden {
+    display: none;
+}
+
 .aggiungi{
     padding: 10px 20px;
     font-size: 16px;
@@ -72,12 +86,4 @@ body {
     border: none;
     border-radius: 5px;
 }
-/* Stile per il riepilogo dei ristoranti */
-.riepilogo {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    width: 40%; /* Larghezza ridotta per le card */
-}
+
