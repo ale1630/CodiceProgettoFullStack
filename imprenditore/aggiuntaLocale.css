@@ -68,11 +68,10 @@
 }
 
 .riepilogo {
-    width: calc(50% - 10px); /* Larghezza del 50% della larghezza del contenitore con uno spazio tra le carte */
+    width: calc(50% - 20px); /* Larghezza del 50% della larghezza del contenitore con uno spazio tra le carte */
     margin-right: 20px; /* Spazio tra le carte */
     margin-bottom: 20px; /* Spazio sotto le carte */
     background-color: #f9f9f9;
-    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
