@@ -67,7 +67,7 @@
 }
 
 .riepilogo {
-    width: calc(30% - 10px); /* Occupa il 50% della larghezza del contenitore con un margine di 10px tra le card */
+    width: calc(15% - 10px); /* Occupa il 50% della larghezza del contenitore con un margine di 10px tra le card */
     margin-bottom: 20px; /* Spazio sotto ogni card */
     background-color: #50d7d3b5;
     padding: 10px;
