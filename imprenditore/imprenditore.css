@@ -22,8 +22,6 @@
 }
 
 .sfondo{
-    background-color: coral;
-    /* background-image: url( 'sfondo.jpg' ); */
     height:auto;
     width:auto;
 }
@@ -63,11 +61,15 @@
     border-radius: 20px;
     padding: 15px;
     background-color: rgba(0, 123, 255, 0.5);
-    border: 1px solid rgba(0, 123, 255, 0.5);
+    border: 1px solid rgba(128, 0, 255, 0.5);
     color: #fff;
     font-weight: bold;
   }
 
+  .imprenditore{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
   .field-icon {
     cursor: pointer;
   }
