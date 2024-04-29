@@ -10,8 +10,18 @@
             display: none;
         }
 
+        /* Stile per posizionare la tabella al centro della pagina */
+        .position-absolute {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Imposta la larghezza massima della tabella */
         #tabella-dati {
-            width: 40%; /* Imposta la larghezza della tabella al 100% del contenitore */
+            width: 80%; /* Modifica la larghezza della tabella */
+            margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
             border-collapse: collapse; /* Unisce i bordi delle celle */
             margin-top: 20px; /* Aggiungi spazio sopra la tabella */
         }
@@ -21,12 +31,10 @@
             padding: 10px; /* Aggiungi spazio interno alle celle */
             border: 1px solid #ddd; /* Aggiungi bordi alle celle */
         }
-        #tabella-dati td {
-            border-bottom: transparent !important;
-        }
+
         /* Stile degli input nella tabella */
         #tabella-dati input {
-            width: 40%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
             padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
 
@@ -45,6 +53,7 @@
         #tabella-dati button:active {
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
+
     </style>
 </head>
 <body>
