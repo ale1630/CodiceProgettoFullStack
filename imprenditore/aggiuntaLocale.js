@@ -45,7 +45,7 @@ function registraDati() {
         <p><strong>Numero di Telefono:</strong> ${telefono}</p>
     `;
 
-    // Aggiungere il riepilogo dei dati al contenitore
+    // Aggiungere il riepilogo dei dati al contenitore principale
     var riepilogoContainer = document.getElementById("riepilogo-container");
     riepilogoContainer.appendChild(riepilogoDiv);
 
@@ -60,5 +60,17 @@ function registraDati() {
     document.getElementById("paese").value = "";
     document.getElementById("cap").value = "";
     document.getElementById("telefono").value = "";
-}
 
+    // Aggiunta del riepilogo alla riga corrente
+    var riepilogoRow = document.querySelector('.riepilogo-row');
+    
+    // Crea una nuova riga se non esiste già o se il numero di ristoranti sulla riga corrente è pari a 2
+    if (!riepilogoRow || riepilogoRow.children.length === 2) {
+        riepilogoRow = document.createElement('div');
+        riepilogoRow.classList.add('riepilogo-row');
+        riepilogoContainer.appendChild(riepilogoRow);
+    }
+
+    // Aggiungi il riepilogo al riepilogoRow corrente
+    riepilogoRow.appendChild(riepilogoDiv);
+}
