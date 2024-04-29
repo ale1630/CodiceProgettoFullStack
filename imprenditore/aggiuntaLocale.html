@@ -6,10 +6,15 @@
     <title>Aggiungi il tuo locale</title>
     <link rel="stylesheet" href="imprenditore.css">
     <style>
+        #tabella-dati.visible {
+            display: table; /* Imposta la visualizzazione della tabella quando è visibile */
+        }
+
         #tabella-dati {
             width: 40%; /* Imposta la larghezza della tabella al 100% del contenitore */
             border-collapse: collapse; /* Unisce i bordi delle celle */
             margin-top: 20px; /* Aggiungi spazio sopra la tabella */
+            display: none; /* Nascondi la tabella per impostazione predefinita */
         }
 
         /* Stile delle celle della tabella */
@@ -20,7 +25,7 @@
 
         /* Stile degli input nella tabella */
         #tabella-dati input {
-            width: 40%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
             padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
 
@@ -36,10 +41,9 @@
             border-radius: 5px; /* Aggiunge i bordi arrotondati al pulsante */
         }
 
-            #tabella-dati button:active {
+        #tabella-dati button:active {
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
-
     </style>
 </head>
 <body>
