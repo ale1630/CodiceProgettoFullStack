@@ -1,14 +1,9 @@
-//funzione per mostrare la tabella per l'inserimento dei dati
+// Funzione per mostrare la tabella per l'inserimento dei dati
 function aggiungi() {
     document.getElementById("tabella-dati").classList.remove("hidden");
 }
 
-//Funzione per registrare i dati e visualizzare il riepilogo
-function registraDati() {
-    // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
-    var tabella = document.getElementById("tabella-dati");
-    tabella.classList.remove("visible"); // Rimuovi la classe visible per nascondere la tabella
-}
+// Funzione per registrare i dati e visualizzare il riepilogo
 function registraDati() {
     // Ottenere i valori dai campi di input
     var nome = document.getElementById("nome").value;
@@ -19,22 +14,20 @@ function registraDati() {
     var cap = document.getElementById("cap").value;
     var telefono = document.getElementById("telefono").value;
 
-    // Creare un nuovo elemento div per il riepilogo dei dati (card)
+    // Creare un nuovo elemento div per il riepilogo dei dati
     var riepilogoDiv = document.createElement("div");
-    riepilogoDiv.classList.add("card");
+    riepilogoDiv.classList.add("riepilogo");
 
     // Costruire il riepilogo dei dati
     riepilogoDiv.innerHTML = `
-        <div class="card-body">
-            <h5 class="card-title">Ristorante: ${nome}</h5>
-            <p class="card-text"><strong>Nome:</strong> ${nome}</p>
-            <p class="card-text"><strong>Posti:</strong> ${posti}</p>
-            <p class="card-text"><strong>Via:</strong> ${via}</p>
-            <p class="card-text"><strong>Civico:</strong> ${civico}</p>
-            <p class="card-text"><strong>Paese:</strong> ${paese}</p>
-            <p class="card-text"><strong>CAP:</strong> ${cap}</p>
-            <p class="card-text"><strong>Numero di Telefono:</strong> ${telefono}</p>
-        </div>
+        <h2>Ristorante: ${nome}</h2>
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>Posti:</strong> ${posti}</p>
+        <p><strong>Via:</strong> ${via}</p>
+        <p><strong>Civico:</strong> ${civico}</p>
+        <p><strong>Paese:</strong> ${paese}</p>
+        <p><strong>CAP:</strong> ${cap}</p>
+        <p><strong>Numero di Telefono:</strong> ${telefono}</p>
     `;
 
     // Aggiungere il riepilogo dei dati al contenitore
@@ -52,4 +45,3 @@ function registraDati() {
     document.getElementById("cap").value = "";
     document.getElementById("telefono").value = "";
 }
-   
