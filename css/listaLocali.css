@@ -25,6 +25,16 @@
     width:auto;
 }
 /* -------------------- */
+.scopri{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #26a5408e; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
+
 .containerLocali {
     
     max-width: 800px;
@@ -51,18 +61,7 @@
 .locale h2 {
     margin-top: 0;
 }
-.scopri {
-    background-color: #26a5408e;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
+
 .prenota {
     background-color: #26a5408e;
     color: #fff;
