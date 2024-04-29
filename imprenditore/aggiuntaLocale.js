@@ -1,13 +1,12 @@
-// Funzione per mostrare la tabella per l'inserimento dei dati
 function aggiungi() {
-    // Nasconde tutti i form aperti prima di mostrare quello relativo a questo click
-    var allTables = document.querySelectorAll("table");
-    allTables.forEach(function(table) {
-        table.classList.add("hidden");
-    });
-    // Mostra il form relativo a questo click
+    console.log("Funzione aggiungi() chiamata."); // Aggiunto per il debug
     document.getElementById("tabella-dati").classList.remove("hidden");
+    var button = document.querySelector(".aggiungi");
+    button.style.textAlign = "left"; // Imposta l'allineamento a sinistra per il bottone "AGGIUNGI"
+    button.style.width = "fit-content"; // Imposta la larghezza del bottone in base al testo
+    button.style.marginRight = "auto"; // Sposta il bottone a sinistra
 }
+
 
 function registraDati() {
     // Ottenere i valori dai campi di input
