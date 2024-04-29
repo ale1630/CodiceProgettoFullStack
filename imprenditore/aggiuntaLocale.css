@@ -39,7 +39,7 @@
 
 /* Imposta la larghezza massima della tabella */
 #tabella-dati {
-    width: 40%; /* Modifica la larghezza della tabella */
+    width: 20%; /* Modifica la larghezza della tabella */
     margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
     border-collapse: collapse; /* Unisce i bordi delle celle */
     margin-top: 20px; /* Aggiungi spazio sopra la tabella */
@@ -50,7 +50,15 @@
     padding: 8px; /* Aggiunge spazio interno alle celle */
     border-bottom: 1px solid #ddd; /* Aggiunge una linea divisoria tra le righe */
 }
-
+#tabella-dati button{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #26a5408e; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
 /* Stile per la card del riepilogo */
 .riepilogo {
     border: 1px solid #ddd;
