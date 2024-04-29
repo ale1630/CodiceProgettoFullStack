@@ -96,6 +96,19 @@
         <!-- Contenitore per i riepiloghi dei dati -->
         <div id="riepiloghi-container"></div>
     </div>
-<script src="aggiuntaLocale.js"></script>
+<script src="aggiuntaLocale.js">
+
+    // Funzione per mostrare la tabella per l'inserimento dei dati
+    function aggiungi() {
+        document.getElementById("tabella-dati").classList.remove("hidden");
+    }
+
+    // Funzione per registrare i dati e visualizzare il riepilogo
+    function registraDati() {
+        // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
+        var tabella = document.getElementById("tabella-dati");
+        tabella.classList.remove("visible"); // Rimuovi la classe visible per nascondere la tabella
+    }
+</script>
 </body>
 </html>
