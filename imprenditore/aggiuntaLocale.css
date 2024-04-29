@@ -71,8 +71,8 @@
 
 #riepilogo-container {
     position: fixed;
-    bottom: 0; /* Posiziona il riepilogo all'inizio del bordo inferiore della finestra */
-    right: 0; /* Posiziona il riepilogo all'inizio del bordo destro della finestra */
+    bottom: 10px; /* Posiziona il riepilogo all'inizio del bordo inferiore della finestra */
+    right: 10px; /* Posiziona il riepilogo all'inizio del bordo destro della finestra */
     width: 200px;
     overflow-y: auto;
 }
