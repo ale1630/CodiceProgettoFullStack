@@ -118,13 +118,12 @@
 
     <script>
         function aggiungi() {
-            var addButton = document.querySelector('.aggiungi');
-            addButton.style.position = 'absolute';
-            addButton.style.left = 'auto';
-            addButton.style.right = '20px'; // Sposta il pulsante "AGGIUNGI" a destra
-            addButton.style.top = '50%';
-            addButton.style.transform = 'translateY(-50%)';
-            document.getElementById("tabella-dati").classList.remove("hidden");
+            var button = document.querySelector(".aggiungi");
+            var tabellaDati = document.getElementById("tabella-dati");
+            button.style.textAlign = "left"; // Imposta l'allineamento a sinistra per il bottone "AGGIUNGI"
+            button.style.width = "fit-content"; // Imposta la larghezza del bottone in base al testo
+            button.style.marginRight = "auto"; // Sposta il bottone a sinistra
+            tabellaDati.classList.remove("hidden"); // Mostra la tabella per l'inserimento dei dati
         }
 
         function registraDati() {
