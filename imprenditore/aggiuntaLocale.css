@@ -26,15 +26,8 @@
 }
 
 
-
-
-
-
-
-
-/* CSS per il layout */
 body {
-    overflow-x: hidden; /* Nasconde lo scrolling orizzontale */
+    overflow-x: hidden; 
 }
 
 .position-absolute {
