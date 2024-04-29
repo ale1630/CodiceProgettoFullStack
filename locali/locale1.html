@@ -25,6 +25,32 @@
             padding: 0px 0px;
         }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .restaurant-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .restaurant-info img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .restaurant-info h2 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .restaurant-info p {
+            margin-bottom: 10px;
+        }
 
     </style>
 </head>
@@ -35,9 +61,18 @@
         </div>
     </nav>
 
-    <div>
-        <img src="images/locale1.jpeg" class="card-img-top" alt="">
+    <div class="container">
+        <div class="restaurant-info">
+            <img src="images/locale1.jpeg" alt="Immagine del ristorante">
+            <div>
+                <h2>Ristorante Example</h2>
+                <p>Una breve descrizione del ristorante.</p>
+                <p>Indirizzo: Via del Ristorante, 123</p>
+                <p>Telefono: 123-456789</p>
+                <p>Sito web: <a href="http://www.example.com">www.example.com</a></p>
+            </div>
+        </div>
     </div>
 
-    </body>
+</body>
 </html>
