@@ -39,7 +39,7 @@
 
 /* Imposta la larghezza massima della tabella */
 #tabella-dati {
-    width: 80%; /* Modifica la larghezza della tabella */
+    width: 40%; /* Modifica la larghezza della tabella */
     margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
     border-collapse: collapse; /* Unisce i bordi delle celle */
     margin-top: 20px; /* Aggiungi spazio sopra la tabella */
