@@ -22,9 +22,11 @@
 
 
 /* ---------------------
-    #CARD LOCALI
+    #FOOTER
 ----------------------- */
-
+.footer{
+    background-color: #26a5408e;
+}
 /* .btn-scopri{
     padding: 10px 20px;
     font-size: 16px;
