@@ -1,6 +1,10 @@
 // Funzione per mostrare la tabella per l'inserimento dei dati
 function aggiungi() {
     document.getElementById("tabella-dati").classList.remove("hidden");
+    var button = document.querySelector(".aggiungi");
+    button.style.textAlign = "left"; // Imposta l'allineamento a sinistra per il bottone "AGGIUNGI"
+    button.style.width = "fit-content"; // Imposta la larghezza del bottone in base al testo
+    button.style.marginRight = "auto"; // Sposta il bottone a sinistra
 }
 
 function registraDati() {
@@ -44,4 +48,3 @@ function registraDati() {
     document.getElementById("cap").value = "";
     document.getElementById("telefono").value = "";
 }
-

@@ -104,3 +104,69 @@
   padding: 10px 20px; /* Aggiungi spazio intorno al pulsante */
   font-size: 16px; /* Modifica la dimensione del testo nel pulsante */
 }
+
+
+        .hidden {
+            display: none;
+        }
+
+        /* Stile per posizionare la tabella al centro della pagina */
+        .position-absolute {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Imposta la larghezza massima della tabella */
+        #tabella-dati {
+            width: 80%; /* Modifica la larghezza della tabella */
+            margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
+            border-collapse: collapse; /* Unisce i bordi delle celle */
+            margin-top: 20px; /* Aggiungi spazio sopra la tabella */
+        }
+
+        /* Stile delle celle della tabella */
+        #tabella-dati td {
+            padding: 10px; /* Aggiungi spazio interno alle celle */
+            border: 1px solid #ddd; /* Aggiungi bordi alle celle */
+        }
+
+        /* Stile degli input nella tabella */
+        #tabella-dati input {
+            width: 90%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
+        }
+
+        /* Stile dei pulsanti nella tabella */
+        #tabella-dati button {
+            padding: 10px 20px; /* Aggiungi spazio intorno al pulsante */
+            font-size: 16px; /* Modifica la dimensione del testo nel pulsante */
+            width: 100%;
+            cursor: pointer; /* Mostra il cursore come indicatore cliccabile */
+            background-color: #26a5408e;
+            color: #fff; /* Colore del testo del pulsante */
+            border: none; /* Rimuove il bordo del pulsante */
+            border-radius: 5px; /* Aggiunge i bordi arrotondati al pulsante */
+        }
+
+        #tabella-dati button:active {
+            background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
+        }
+
+        /* Stile del nuovo div contenitore */
+        #contenitore-pulsante-riepilogo {
+            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
+            display: flex; /* Utilizza il layout flessibile */
+            flex-direction: column; /* Posiziona i riepiloghi dei ristoranti uno sopra l'altro */
+            align-items: flex-end; /* Allinea i riepiloghi a destra */
+        }
+
+        /* Stile per il riepilogo dei ristoranti */
+        .riepilogo {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
