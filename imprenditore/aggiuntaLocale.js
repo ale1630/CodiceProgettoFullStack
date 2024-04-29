@@ -1,11 +1,11 @@
 // Funzione per mostrare la tabella per l'inserimento dei dati
-// function aggiungi() {
-//     document.getElementById("tabella-dati").classList.remove("hidden");
-// }
 function aggiungi() {
-    var tabella = document.getElementById("tabella-dati");
-    tabella.style.display = "table"; // Mostra la tabella impostando il display su "table"
+    document.getElementById("tabella-dati").classList.remove("hidden");
 }
+// function aggiungi() {
+//     var tabella = document.getElementById("tabella-dati");
+//     tabella.style.display = "table"; // Mostra la tabella impostando il display su "table"
+// }
 
 function registraDati() {
     // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
