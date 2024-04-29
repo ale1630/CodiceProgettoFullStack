@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aggiungi il tuo locale</title>
-    <link rel="stylesheet" href="aggiuntaLocale.css">
-</head>
-<body>
+    <link rel="stylesheet" href="aggiuntaLocale.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container pl-0">
-            <strong><h3>THE FORK</h3></strong>
-        </div>
+      <div class="container pl-0">
+        <strong><h3>THE FORK</h3></strong>
+      </div>
     </nav>
     <div id="form-container" class="position-absolute top-50 translate-middle">
-        <h2>Aggiungi il tuo locale</h2>
-        <!-- Pulsante "AGGIUNGI" -->
-        <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
+      <h2>Aggiungi il tuo locale</h2>
+      <!-- Pulsante "AGGIUNGI" -->
+      <button type="button" onclick="aggiungi()" class="aggiungi">
+        AGGIUNGI
+      </button>
     </div>
-    
 
     <!-- Tabella per l'inserimento dei dati -->
     <table id="tabella-dati" class="hidden">
-        <tr>
-            <td><b>NOME</b></td>
-            <td><input type="text" id="nome" placeholder="Nome"></td> 
-        </tr>
-        <tr>
-            <td><b>POSTI</b></td>
-            <td><input type="number" id="posti" placeholder="Posti"></td>
-        </tr>
-        <tr>
-            <td><b>VIA</b></td>
-            <td><input type="text" id="via" placeholder="Via"></td>
-        </tr>
-        <tr>
-            <td><B>CIVICO</B></td>
-            <td><input type="text" id="civico" placeholder="Civico"></td>
-        </tr>
-        <tr>
-            <td><B>PAESE</B></td>
-            <td><input type="text" id="paese" placeholder="Paese"></td>
-        </tr>
-        <tr>
-            <td><b>CAP</b></td>
-            <td><input type="number" id="cap" placeholder="CAP"></td>
-        </tr>
-        <tr>
-            <td><b>NUMERO DI TELEFONO</b></td>
-            <td><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
-        </tr>
-        <tr>
-            <td></td> <!-- Spazio vuoto per allineamento -->
-            <td><button type="button" class="btn btn-primary" onclick="registraDati()">REGISTRA</button></td>
-        </tr>
+      <tr>
+        <td><b>NOME</b></td>
+        <td><input type="text" id="nome" placeholder="Nome" /></td>
+      </tr>
+      <tr>
+        <td><b>POSTI</b></td>
+        <td><input type="number" id="posti" placeholder="Posti" /></td>
+      </tr>
+      <tr>
+        <td><b>VIA</b></td>
+        <td><input type="text" id="via" placeholder="Via" /></td>
+      </tr>
+      <tr>
+        <td><b>CIVICO</b></td>
+        <td><input type="text" id="civico" placeholder="Civico" /></td>
+      </tr>
+      <tr>
+        <td><b>PAESE</b></td>
+        <td><input type="text" id="paese" placeholder="Paese" /></td>
+      </tr>
+      <tr>
+        <td><b>CAP</b></td>
+        <td><input type="number" id="cap" placeholder="CAP" /></td>
+      </tr>
+      <tr>
+        <td><b>NUMERO DI TELEFONO</b></td>
+        <td>
+          <input type="number" id="telefono" placeholder="Numero di Telefono" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <!-- Spazio vuoto per allineamento -->
+        <td>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="registraDati()"
+          >
+            REGISTRA
+          </button>
+        </td>
+      </tr>
     </table>
-     <!-- Contenitore per il riepilogo dei ristoranti -->
-     <div id="riepilogo-container">
-        <!-- Prima riga -->
-        <div class="riepilogo-row ">
-            <!-- Qui verranno aggiunte le card di riepilogo -->
-        </div>
+    <!-- Contenitore per il riepilogo dei ristoranti -->
+    <div id="riepilogo-container">
+      <!-- Prima riga -->
+      <div class="riepilogo-row">
+        <!-- Qui verranno aggiunte le card di riepilogo -->
+      </div>
     </div>
     <script src="aggiuntaLocale.js"></script>
-</body>
+  </body>
 </html>

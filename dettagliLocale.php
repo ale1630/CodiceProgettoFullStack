@@ -13,4 +13,3 @@ if (isset($_GET['id'])) {
     $stmt->execute();
     $result = $stmt->get_result();
 }
-?>

@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Bind dei parametri
-        $stmt->bind_param("sssss", $email,$nome, $cognome, $telefono, $hashed_password);
+        $stmt->bind_param("sssss", $email, $nome, $cognome, $telefono, $hashed_password);
 
         if ($stmt->execute()) {
             // Registrazione completata con successo, reindirizza alla pagina successiva
@@ -44,4 +44,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $check_stmt->close();
     $conn->close();
 }
-?>

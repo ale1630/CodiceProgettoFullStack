@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Bind dei parametri
-        $stmt->bind_param("sssss", $reg_codiceOperatore, $hashed_password, $nome, $cognome, $reg_idLocale );
+        $stmt->bind_param("sssss", $reg_codiceOperatore, $hashed_password, $nome, $cognome, $reg_idLocale);
 
         if ($stmt->execute()) {
             // Registrazione completata con successo, reindirizza alla pagina successiva
@@ -45,4 +45,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $check_stmt->close();
     $conn->close();
 }
-?>
