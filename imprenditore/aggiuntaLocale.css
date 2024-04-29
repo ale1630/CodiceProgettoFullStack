@@ -70,11 +70,11 @@
 }
 
 #riepilogo-container {
-    position:fixed;
-    bottom: 0px; /* Posiziona il riepilogo 20px sopra il fondo della pagina */
-    right: 0px; /* Distanza dal margine destro della pagina */
-    width: 200px; /* Larghezza del riepilogo */
-    overflow-y: auto; /* Per consentire lo scroll quando ci sono molti ristoranti */
+    position: fixed;
+    bottom: 0; /* Posiziona il riepilogo all'inizio del bordo inferiore della finestra */
+    right: 0; /* Posiziona il riepilogo all'inizio del bordo destro della finestra */
+    width: 200px;
+    overflow-y: auto;
 }
 
 .aggiungi{
