@@ -6,24 +6,47 @@
     <title>Aggiungi il tuo locale</title>
     <link rel="stylesheet" href="imprenditore.css">
     <style>
-        .hidden {
-            display: none;
-        }
+        /* Stile generale della tabella */
         #tabella-dati {
-            width: 40%; /* Imposta la larghezza della tabella al 100% della larghezza del contenitore */
-            font-size: 16px; /* Modifica la dimensione del testo nella tabella */
+            width: 100%; /* Imposta la larghezza della tabella al 100% del contenitore */
+            border-collapse: collapse; /* Unisce i bordi delle celle */
+            margin-top: 20px; /* Aggiungi spazio sopra la tabella */
         }
 
+        /* Stile delle celle della tabella */
+        #tabella-dati td {
+            padding: 10px; /* Aggiungi spazio interno alle celle */
+            border: 1px solid #ddd; /* Aggiungi bordi alle celle */
+        }
+
+        /* Stile degli input nella tabella */
         #tabella-dati input {
-            width: 40%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
-            padding: 10px; /* Aggiungi spazio intorno ai bordi degli input */
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
 
+        /* Stile dei pulsanti nella tabella */
         #tabella-dati button {
             padding: 10px 20px; /* Aggiungi spazio intorno al pulsante */
             font-size: 16px; /* Modifica la dimensione del testo nel pulsante */
-            width:40%;
+            width: 100%;
+            cursor: pointer; /* Mostra il cursore come indicatore cliccabile */
+            background-color: #007bff; /* Colore di sfondo del pulsante */
+            color: #fff; /* Colore del testo del pulsante */
+            border: none; /* Rimuove il bordo del pulsante */
+            border-radius: 5px; /* Aggiunge i bordi arrotondati al pulsante */
         }
+
+        /* Stile dei pulsanti quando il cursore si posiziona sopra */
+        #tabella-dati button:hover {
+            background-color: #0056b3; /* Cambia il colore di sfondo del pulsante al passaggio del mouse */
+        }
+
+        /* Stile dei pulsanti quando vengono premuti */
+        #tabella-dati button:active {
+            background-color: #004080; /* Cambia il colore di sfondo del pulsante quando viene premuto */
+        }
+
     </style>
 </head>
 <body>
