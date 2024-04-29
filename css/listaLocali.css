@@ -1,4 +1,30 @@
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+.navbar {
+    background-color: #26a5408e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.sfondo{
+    height:auto;
+    width:auto;
+}
+/* -------------------- */
 .containerLocali {
     
     max-width: 800px;
