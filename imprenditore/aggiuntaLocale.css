@@ -78,6 +78,14 @@
     border-radius: 5px;
 }
 
+#riepilogo-container {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Distanza dal margine destro della pagina */
+    transform: translateY(-50%);
+    width: 200px; /* Larghezza del riepilogo */
+    overflow-y: auto; /* Per consentire lo scroll quando ci sono molti ristoranti */
+}
 
 
 .aggiungi{
