@@ -31,7 +31,7 @@ body {
     margin-top: 0;
 }
 .scopri {
-    background-color: #007bff;
+    background-color: #26a5408e;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -43,7 +43,7 @@ body {
     right: 5px;
 }
 .prenota {
-    background-color: #007bff;
+    background-color: #26a5408e;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -55,7 +55,7 @@ body {
     right: 5px;
 }
 .prenota-btn:hover {
-    background-color: #0056b3;
+    background-color: #26a5408e;
 }
 
 .areaPersonale{
@@ -63,7 +63,7 @@ body {
     position: relative;
     width: 40%;
     
-    background-color: #007bff;
+    background-color: #26a5408e;
     color: #fff;
     padding: 20px;
     border-radius: 5px;
