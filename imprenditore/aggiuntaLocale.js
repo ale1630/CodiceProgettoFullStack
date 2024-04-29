@@ -3,7 +3,6 @@ function aggiungi() {
     document.getElementById("tabella-dati").classList.remove("hidden");
 }
 
-// Funzione per registrare i dati e visualizzare il riepilogo
 function registraDati() {
     // Ottenere i valori dai campi di input
     var nome = document.getElementById("nome").value;
@@ -31,7 +30,7 @@ function registraDati() {
     `;
 
     // Aggiungere il riepilogo dei dati al contenitore
-    document.getElementById("riepiloghi-container").appendChild(riepilogoDiv);
+    document.getElementById("contenitore-pulsante-riepilogo").appendChild(riepilogoDiv);
 
     // Nascondere la tabella per l'inserimento dei dati
     document.getElementById("tabella-dati").classList.add("hidden");
@@ -45,3 +44,4 @@ function registraDati() {
     document.getElementById("cap").value = "";
     document.getElementById("telefono").value = "";
 }
+
