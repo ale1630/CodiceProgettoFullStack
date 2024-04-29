@@ -76,13 +76,6 @@
 }
 
 
-#riepilogo-container {
-    position: fixed;
-    bottom: 10px; /* Posiziona il riepilogo all'inizio del bordo inferiore della finestra */
-    right: 10px; /* Posiziona il riepilogo all'inizio del bordo destro della finestra */
-    width: 200px;
-    overflow-y: auto;
-}
 
 .aggiungi{
     padding: 10px 20px;
