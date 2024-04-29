@@ -71,13 +71,11 @@
 
 #riepilogo-container {
     position: fixed;
-    top: 50%;
+    bottom: 20px; /* Posiziona il riepilogo 20px sopra il fondo della pagina */
     right: 20px; /* Distanza dal margine destro della pagina */
-    transform: translateY(-50%);
     width: 200px; /* Larghezza del riepilogo */
     overflow-y: auto; /* Per consentire lo scroll quando ci sono molti ristoranti */
 }
-
 
 .aggiungi{
     padding: 10px 20px;
