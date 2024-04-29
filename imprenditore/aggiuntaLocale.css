@@ -60,14 +60,21 @@
     border-radius: 5px;
 }
 
+.riepilogo-row {
+    display: flex; /* Imposta il layout dei riepiloghi su una riga */
+    flex-wrap: wrap; /* Per consentire il wrapping dei riepiloghi quando la larghezza del contenitore è limitata */
+    justify-content: space-between; /* Distribuisce uniformemente i riepiloghi lungo l'asse principale */
+}
+
 .riepilogo {
-    width: 100%; /* Occupa tutta la larghezza del contenitore */
-    margin-bottom: 20px; /* Spazio sotto ogni ristorante */
+    width: calc(50% - 10px); /* Occupa il 50% della larghezza del contenitore con un margine di 10px tra le card */
+    margin-bottom: 20px; /* Spazio sotto ogni card */
     background-color: #50d7d3b5;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 
 #riepilogo-container {
     position: fixed;
