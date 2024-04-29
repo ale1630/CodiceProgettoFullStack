@@ -24,18 +24,22 @@
             margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
             border-collapse: collapse; /* Unisce i bordi delle celle */
             margin-top: 20px; /* Aggiungi spazio sopra la tabella */
+            float: left; /* Permette al contenitore di rimanere a sinistra */
         }
 
-        /* Stile delle celle della tabella */
-        #tabella-dati td {
-            padding: 10px; /* Aggiungi spazio interno alle celle */
-            border: 1px solid #ddd; /* Aggiungi bordi alle celle */
+        /* Stile del nuovo div contenitore */
+        #contenitore-pulsante-riepilogo {
+            float: right; /* Posiziona il contenitore a destra della tabella */
+            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
         }
 
-        /* Stile degli input nella tabella */
-        #tabella-dati input {
-            width: 90%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
-            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
+        /* Stile per il riepilogo dei ristoranti */
+        .riepilogo {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
 
         /* Stile dei pulsanti nella tabella */
@@ -54,22 +58,10 @@
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
 
-        /* Stile del nuovo div contenitore */
-        #contenitore-pulsante-riepilogo {
-            display: flex; /* Utilizza il layout flessibile */
-            justify-content: center; /* Centra gli elementi lungo l'asse orizzontale */
-            align-items: center; /* Centra gli elementi lungo l'asse verticale */
-            flex-wrap: wrap; /* Permette il wrapping degli elementi su più righe se necessario */
-            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
-        }
-
-        /* Stile per il riepilogo dei ristoranti */
-        .riepilogo {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+        /* Stile degli input nella tabella */
+        #tabella-dati input {
+            width: calc(100% - 20px); /* Imposta la larghezza degli input al 100% della larghezza della cella meno il padding */
+            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
     </style>
 </head>
