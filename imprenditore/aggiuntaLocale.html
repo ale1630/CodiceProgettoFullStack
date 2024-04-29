@@ -24,22 +24,18 @@
             margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
             border-collapse: collapse; /* Unisce i bordi delle celle */
             margin-top: 20px; /* Aggiungi spazio sopra la tabella */
-            float: left; /* Permette al contenitore di rimanere a sinistra */
         }
 
-        /* Stile del nuovo div contenitore */
-        #contenitore-pulsante-riepilogo {
-            float: right; /* Posiziona il contenitore a destra della tabella */
-            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
+        /* Stile delle celle della tabella */
+        #tabella-dati td {
+            padding: 10px; /* Aggiungi spazio interno alle celle */
+            border: 1px solid #ddd; /* Aggiungi bordi alle celle */
         }
 
-        /* Stile per il riepilogo dei ristoranti */
-        .riepilogo {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+        /* Stile degli input nella tabella */
+        #tabella-dati input {
+            width: 90%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
 
         /* Stile dei pulsanti nella tabella */
@@ -58,10 +54,23 @@
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
 
-        /* Stile degli input nella tabella */
-        #tabella-dati input {
-            width: calc(100% - 20px); /* Imposta la larghezza degli input al 100% della larghezza della cella meno il padding */
-            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
+        /* Stile del nuovo div contenitore */
+        #contenitore-pulsante-riepilogo {
+            display: flex; /* Utilizza il layout flessibile */
+            justify-content: center; /* Centra gli elementi lungo l'asse orizzontale */
+            align-items: center; /* Centra gli elementi lungo l'asse verticale */
+            flex-wrap: wrap; /* Permette il wrapping degli elementi su più righe se necessario */
+            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
+            flex-direction: row-reverse; /* Inverti l'ordine dei figli */
+        }
+
+        /* Stile per il riepilogo dei ristoranti */
+        .riepilogo {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -76,6 +85,9 @@
         <h2>Aggiungi il tuo locale</h2>
         <!-- Pulsante "AGGIUNGI" -->
         <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
+
+        <!-- Contenitore per il pulsante "AGGIUNGI" e il riepilogo dei ristoranti -->
+        <div id="contenitore-pulsante-riepilogo"></div>
 
         <!-- Tabella per l'inserimento dei dati -->
         <table id="tabella-dati" class="hidden">
@@ -104,9 +116,6 @@
                 <td><button type="button" class="btn-primary" onclick="registraDati()">Registra</button></td>
             </tr>
         </table>
-
-        <!-- Contenitore per il pulsante "AGGIUNGI" e il riepilogo dei ristoranti -->
-        <div id="contenitore-pulsante-riepilogo"></div>
     </div>
 
     <script src="aggiuntaLocale.js"></script>
