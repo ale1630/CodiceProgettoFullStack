@@ -59,11 +59,6 @@
     border: none;
     border-radius: 5px;
 }
-/* .riepilogo-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Cambiato da "flex-start" a "space-between" 
-} */
 
 .riepilogo {
     width: 100%; /* Occupa tutta la larghezza del contenitore */
@@ -73,7 +68,6 @@
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
 
 #riepilogo-container {
     position: fixed;
