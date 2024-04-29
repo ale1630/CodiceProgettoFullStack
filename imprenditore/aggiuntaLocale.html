@@ -6,7 +6,10 @@
     <title>Aggiungi il tuo locale</title>
     <link rel="stylesheet" href="imprenditore.css">
     <style>
-        /* Rimuovi la classe hidden dalla tabella quando è visibile */
+        #tabella-dati.visible {
+            display: table; /* Imposta la visualizzazione della tabella quando è visibile */
+        }
+
         #tabella-dati {
             width: 40%; /* Imposta la larghezza della tabella al 100% del contenitore */
             border-collapse: collapse; /* Unisce i bordi delle celle */
@@ -54,61 +57,50 @@
         <h2>Aggiungi il tuo locale</h2>
         <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
         <br>
-                <!-- Tabella per l'inserimento dei dati -->
-                <table id="tabella-dati" class="hidden">
-                    <tr>
-                        <tr>
-                            <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
-                        </tr>
-                        <br><br>
-                        <td><button type="button"  class="btn-primary" onclick="registraDati()">Registra</button></td>
-                    </tr>
-        
-                    <td>
-                            <img src="images/porto.jpg" alt="Immagine del locale" style="max-width: 100%;">
-                        </td>
-        
-                </table>
+        <!-- Tabella per l'inserimento dei dati -->
+        <table id="tabella-dati" class="hidden">
+            <tr>
+                <tr>
+                    <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
+                </tr>
+                <br>
+                <tr>
+                    <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
+                </tr>
+                <br><br>
+                <td><button type="button"  class="btn-primary" onclick="registraDati()">Registra</button></td>
+            </tr>
+
+            <td>
+                    <img src="images/porto.jpg" alt="Immagine del locale" style="max-width: 100%;">
+                </td>
+
+        </table>
+        <!-- <img src="porto.jpg"> -->
         <!-- Contenitore per i riepiloghi dei dati -->
         <div id="riepiloghi-container"></div>
     </div>
-<script src="aggiuntaLocale.js">
 
-    // Funzione per mostrare la tabella per l'inserimento dei dati
-    function aggiungi() {
-        document.getElementById("tabella-dati").classList.remove("hidden");
-    }
-
-    // Funzione per registrare i dati e visualizzare il riepilogo
-    function registraDati() {
-        // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
-        var tabella = document.getElementById("tabella-dati");
-        tabella.classList.remove("visible"); // Rimuovi la classe visible per nascondere la tabella
-    }
-</script>
+    <script src="aggiuntaLocale.js"></script>
 </body>
 </html>

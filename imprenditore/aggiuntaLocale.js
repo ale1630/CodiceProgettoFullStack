@@ -1,9 +1,9 @@
-// Funzione per mostrare la tabella per l'inserimento dei dati
+//funzione per mostrare la tabella per l'inserimento dei dati
 function aggiungi() {
     document.getElementById("tabella-dati").classList.remove("hidden");
 }
 
-// Funzione per registrare i dati e visualizzare il riepilogo
+//Funzione per registrare i dati e visualizzare il riepilogo
 function registraDati() {
     // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
     var tabella = document.getElementById("tabella-dati");
