@@ -20,7 +20,7 @@
 
         /* Stile degli input nella tabella */
         #tabella-dati input {
-            width: 40%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
             padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
         }
 
@@ -36,10 +36,9 @@
             border-radius: 5px; /* Aggiunge i bordi arrotondati al pulsante */
         }
 
-            #tabella-dati button:active {
+        #tabella-dati button:active {
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
-
     </style>
 </head>
 <body>
@@ -56,43 +55,35 @@
         <!-- Tabella per l'inserimento dei dati -->
         <table id="tabella-dati" class="hidden">
             <tr>
-                <tr>
-                    <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
-                </tr>
-                <br>
-                <tr>
-                    <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
-                </tr>
-                <br>
-                <tr>
-                    <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
-                </tr>
-                <br><br>
+                <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
+            </tr>
+            <tr>
+                <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
+            </tr>
+            <tr>
+                <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
+            </tr>
+            <tr>
+                <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
+            </tr>
+            <tr>
+                <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
+            </tr>
+            <tr>
+                <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
+            </tr>
+            <tr>
+                <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
+            </tr>
+            <tr>
                 <td><button type="button"  class="btn-primary" onclick="registraDati()">Registra</button></td>
             </tr>
-
-            <td>
+            <tr>
+                <td colspan="2">
                     <img src="images/porto.jpg" alt="Immagine del locale" style="max-width: 100%;">
                 </td>
-
+            </tr>
         </table>
-        <!-- <img src="porto.jpg"> -->
         <!-- Contenitore per i riepiloghi dei dati -->
         <div id="riepiloghi-container"></div>
     </div>
