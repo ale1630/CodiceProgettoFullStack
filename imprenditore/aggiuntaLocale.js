@@ -9,6 +9,8 @@ function aggiungi() {
 
 
 function registraDati() {
+    console.log("Funzione registraDati() chiamata."); // Per il debug
+
     // Ottenere i valori dai campi di input
     var nome = document.getElementById("nome").value;
     var posti = document.getElementById("posti").value;
@@ -17,6 +19,15 @@ function registraDati() {
     var paese = document.getElementById("paese").value;
     var cap = document.getElementById("cap").value;
     var telefono = document.getElementById("telefono").value;
+
+    // Output dei valori per il debug
+    console.log("Nome:", nome);
+    console.log("Posti:", posti);
+    console.log("Via:", via);
+    console.log("Civico:", civico);
+    console.log("Paese:", paese);
+    console.log("CAP:", cap);
+    console.log("Telefono:", telefono);
 
     // Creare un nuovo elemento div per la riepilogo dei dati
     var riepilogoDiv = document.createElement("div");
