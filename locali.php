@@ -1,3 +1,15 @@
+<?php
+session_start();
+require_once "database.php";
+
+$sql = "SELECT * FROM locali";
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $reg_CF = $_POST['reg_CF'];
@@ -8,19 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $reg_telefono = $_POST['reg_telefono'];
     $password = $_POST['reg_password'];
 
-
-    // Connessione al database
-    $servername = "localhost";
-    $db_username = "root";
-    $db_password = "root";
-    $dbname = "the_fork";
-
-    $conn = new mysqli($servername, $db_username, $db_password, $dbname);
-
-    // Controllo della connessione
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
-    }
 
     // Verifica se lo username esiste già nel database
     $check_stmt = $conn->prepare("SELECT * FROM imprenditore WHERE CF = ?");

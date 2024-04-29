@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['reg_email'];
@@ -7,20 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['reg_name'];
     $cognome = $_POST['reg_cognome'];
     $telefono = $_POST['reg_telefono'];
-
-
-    // Connessione al database
-    $servername = "localhost";
-    $db_username = "root";
-    $db_password = "root";
-    $dbname = "the_fork";
-
-    $conn = new mysqli($servername, $db_username, $db_password, $dbname);
-
-    // Controllo della connessione
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
-    }
 
     // Verifica se lo username esiste già nel database
     $check_stmt = $conn->prepare("SELECT * FROM cliente WHERE email = ?");

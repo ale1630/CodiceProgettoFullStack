@@ -1,20 +1,11 @@
 <?php
 session_start();
+require_once "database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $codiceOperatore = $_POST['codiceOperatore'];
     $password = $_POST['password'];
 
-    $servername = "localhost:3306";
-    $db_username = "root";
-    $db_password = "root";
-    $dbname = "the_fork";
-
-    $conn = new mysqli($servername, $db_username, $db_password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
-    }
 
     $stmt = $conn->prepare("SELECT password FROM admin WHERE codiceOperatore = ?");
     $stmt->bind_param("s", $codiceOperatore);
