@@ -63,6 +63,15 @@ body {
     border-radius: 5px;
 }
 
+.aggiungi{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #26a5408e; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
 /* Stile per il riepilogo dei ristoranti */
 .riepilogo {
     margin: 10px;
