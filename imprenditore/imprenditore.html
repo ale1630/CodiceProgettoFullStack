@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="imprenditore.css">
+    <style>
+        body {
+            background-image: url('sfondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Per fissare l'immagine di sfondo */
+            background-color: #f0f0f0; /* Colore di sfondo */
+        }
+        .scritta{
+            color:#f0f0f0;
+        }
+        .signin-form {
+            background-color: #26a5408e;
+        }
+        .navbar{
+            background-color: #26a5408e;
+        }
+    </style>
+</head>
+<body>
+<!--------------------------------------------------------------
+# navbar
+-------------------------------------------------------------->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <!-- <a class="navbar-brand" href="#"><img class="bbMare" src="immagini/logo.png" width="200px" height="60px"style="margin-left: 160px;"></a> -->
+    <div class="container pl-0">
+        <strong> <H3>THE FORK</H3></strong>
+    </div>
+</nav>
+<br>
+<br>
+    <div class="scritta">
+       <b> 
+        PARTE RISERVATA: 
+        <p class="imprenditore">
+            imprenditore
+        </p>  
+       </b> 
+    </div>
+    <div class="sfondo">
+        <div>
+            <form action="#" class="signin-form" method="post">
+                <div class="form-group">
+                    <p class="scritta"> Inserisci la tua mail </p>
+                    <input type="text" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <p class="scritta">Inserisci la password</p>
+                    <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control btn btn-primary submit px-3" onclick="accedi()">ACCEDI</button>
+                </div>
+                <div class="form-group d-md-flex"></div>
+            </form>
+
+        </div>
+    </div> <!-- Aggiungi questa divisione per l'immagine di sfondo -->
+</body>
+</html>

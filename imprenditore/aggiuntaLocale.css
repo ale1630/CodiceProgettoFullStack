@@ -1,0 +1,89 @@
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #26a5408e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+.sfondo{
+    height:auto;
+    width:auto;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Stile per posizionare la tabella al centro della pagina */
+.position-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Imposta la larghezza massima della tabella */
+#tabella-dati {
+    width: 20%; /* Modifica la larghezza della tabella */
+    margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+    margin-top: 20px; /* Aggiungi spazio sopra la tabella */
+}
+
+/* Stile delle celle della tabella */
+#tabella-dati td {
+    padding: 8px; /* Aggiunge spazio interno alle celle */
+    border-bottom: 1px solid #ddd; /* Aggiunge una linea divisoria tra le righe */
+}
+#tabella-dati button{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #26a5408e; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
+
+.riepilogo-row {
+    display: flex; /* Imposta il layout dei riepiloghi su una riga */
+    flex-wrap: wrap; /* Per consentire il wrapping dei riepiloghi quando la larghezza del contenitore è limitata */
+    justify-content: space-between; /* Distribuisce uniformemente i riepiloghi lungo l'asse principale */
+}
+
+.riepilogo {
+    width: calc(15% - 10px); /* Occupa il 50% della larghezza del contenitore con un margine di 10px tra le card */
+    margin-bottom: 20px; /* Spazio sotto ogni card */
+    background-color: #50d7d3b5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+.aggiungi{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #26a5408e; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
+
