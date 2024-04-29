@@ -70,7 +70,7 @@
 }
 
 #riepilogo-container {
-    position:absolute;
+    position:fixed;
     bottom: 0px; /* Posiziona il riepilogo 20px sopra il fondo della pagina */
     right: 20px; /* Distanza dal margine destro della pagina */
     width: 200px; /* Larghezza del riepilogo */
