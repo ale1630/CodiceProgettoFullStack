@@ -17,38 +17,38 @@
         <h2>Aggiungi il tuo locale</h2>
         <!-- Pulsante "AGGIUNGI" -->
         <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
-
-        <!-- Tabella per l'inserimento dei dati -->
-        <table id="tabella-dati" class="hidden">
-            <tr>
-                <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
-            </tr>
-            <tr>
-                <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
-            </tr>
-            <tr>
-                <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
-            </tr>
-            <tr>
-                <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
-            </tr>
-            <tr>
-                <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
-            </tr>
-            <tr>
-                <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
-            </tr>
-            <tr>
-                <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
-            </tr>
-            <tr>
-                <td><button type="button" class="btn btn-primary" onclick="registraDati()">REGISTRA</button></td>
-            </tr>
-        </table>
     </div>
 
-    <!-- Contenitore per il riepilogo dei ristoranti -->
+    <!-- Contenitore per il pulsante "AGGIUNGI" e il riepilogo dei ristoranti -->
     <div id="contenitore-pulsante-riepilogo"></div>
+
+    <!-- Tabella per l'inserimento dei dati -->
+    <table id="tabella-dati" class="hidden">
+        <tr>
+            <td>Nome<input type="text" id="nome" placeholder="Nome"></td> 
+        </tr>
+        <tr>
+            <td><b>Posti</b><input type="number" id="posti" placeholder="Posti"></td>
+        </tr>
+        <tr>
+            <td><b>Via</b><input type="text" id="via" placeholder="Via"></td>
+        </tr>
+        <tr>
+            <td><B>Civico</B><input type="text" id="civico" placeholder="Civico"></td>
+        </tr>
+        <tr>
+            <td><B>Paese</B><input type="text" id="paese" placeholder="Paese"></td>
+        </tr>
+        <tr>
+            <td><b>CAP</b><input type="number" id="cap" placeholder="CAP"></td>
+        </tr>
+        <tr>
+            <td><b>Numero di telefono</b><input type="number" id="telefono" placeholder="Numero di Telefono"></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-primary" onclick="registraDati()">REGISTRA</button></td>
+        </tr>
+    </table>
 
     <script src="imprenditore.js"></script>
 </body>

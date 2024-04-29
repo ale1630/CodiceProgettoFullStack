@@ -25,11 +25,11 @@
     width:auto;
 }
 
-
-body {
-    overflow-x: hidden; 
+.hidden {
+    display: none;
 }
 
+/* Stile per posizionare la tabella al centro della pagina */
 .position-absolute {
     position: absolute;
     top: 50%;
@@ -37,46 +37,25 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Imposta la larghezza massima della tabella */
 #tabella-dati {
-    width: 100%; /* Larghezza ridotta per il form */
-    font-size: 16px;
+    width: 80%; /* Modifica la larghezza della tabella */
+    margin: 0 auto; /* Imposta i margini automatici per centrare la tabella */
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+    margin-top: 20px; /* Aggiungi spazio sopra la tabella */
 }
 
-/* Stile degli input nella tabella */
-#tabella-dati input {
-    width: calc(100% - 16px); /* Imposta la larghezza degli input con un margine ridotto */
-    padding: 8px; /* Ridotto lo spazio intorno agli input */
+/* Stile delle celle della tabella */
+#tabella-dati td {
+    padding: 8px; /* Aggiunge spazio interno alle celle */
+    border-bottom: 1px solid #ddd; /* Aggiunge una linea divisoria tra le righe */
 }
 
-/* Stile dei pulsanti nella tabella */
-#tabella-dati button {
-    padding: 10px 20px;
-    font-size: 16px;
-    width: 100%;
-    background-color: #26a5408e; /* Colore di sfondo del pulsante */
-    color: #fff; /* Colore del testo del pulsante */
-    border: none;
+/* Stile per la card del riepilogo */
+.riepilogo {
+    border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
 }
-
-/* Stile per il contenitore del form */
-#form-container {
-    width: 60%; /* Larghezza del contenitore del form */
-    margin: 20px auto; /* Margine superiore e inferiore */
-}
-
-/* Nascondi il contenitore del form di default */
-#form-container.hidden {
-    display: none;
-}
-
-.aggiungi{
-    padding: 10px 20px;
-    font-size: 16px;
-    width: 100%;
-    background-color: #26a5408e; /* Colore di sfondo del pulsante */
-    color: #fff; /* Colore del testo del pulsante */
-    border: none;
-    border-radius: 5px;
-}
-

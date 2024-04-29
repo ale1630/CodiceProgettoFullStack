@@ -19,7 +19,7 @@ function registraDati() {
     var cap = document.getElementById("cap").value;
     var telefono = document.getElementById("telefono").value;
 
-    // Creare un nuovo elemento div per il riepilogo dei dati
+    // Creare un nuovo elemento div per la riepilogo dei dati
     var riepilogoDiv = document.createElement("div");
     riepilogoDiv.classList.add("riepilogo");
 
@@ -38,7 +38,7 @@ function registraDati() {
     // Aggiungere il riepilogo dei dati al contenitore
     document.getElementById("contenitore-pulsante-riepilogo").appendChild(riepilogoDiv);
 
-    // Nascondere la tabella per l'inserimento dei dati
+    // Nascondere la tabella per l'inserimento dei dati dopo aver registrato i dati
     document.getElementById("tabella-dati").classList.add("hidden");
 
     // Svuotare i campi di input per il prossimo inserimento
