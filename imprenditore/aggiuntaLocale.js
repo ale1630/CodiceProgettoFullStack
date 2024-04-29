@@ -1,14 +1,14 @@
-// Funzione per mostrare la tabella per l'inserimento dei dati
 function aggiungi() {
-    document.getElementById("tabella-dati").classList.remove("hidden");
+    var tabella = document.getElementById("tabella-dati");
+    tabella.style.display = "table"; // Mostra la tabella impostando il display su "table"
 }
 
-// Funzione per registrare i dati e visualizzare il riepilogo
 function registraDati() {
     // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
     var tabella = document.getElementById("tabella-dati");
-    tabella.classList.remove("visible"); // Rimuovi la classe visible per nascondere la tabella
+    tabella.style.display = "none"; // Nascondi la tabella impostando il display su "none"
 }
+
 function registraDati() {
     // Ottenere i valori dai campi di input
     var nome = document.getElementById("nome").value;
