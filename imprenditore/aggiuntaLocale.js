@@ -3,7 +3,6 @@ function aggiungi() {
     document.getElementById("tabella-dati").classList.remove("hidden");
 }
 
-// Funzione per registrare i dati e visualizzare il riepilogo
 function registraDati() {
     // Ottenere i valori dai campi di input
     var nome = document.getElementById("nome").value;
@@ -14,20 +13,22 @@ function registraDati() {
     var cap = document.getElementById("cap").value;
     var telefono = document.getElementById("telefono").value;
 
-    // Creare un nuovo elemento div per il riepilogo dei dati
+    // Creare un nuovo elemento div per il riepilogo dei dati (card)
     var riepilogoDiv = document.createElement("div");
-    riepilogoDiv.classList.add("riepilogo");
+    riepilogoDiv.classList.add("card");
 
     // Costruire il riepilogo dei dati
     riepilogoDiv.innerHTML = `
-        <h2>Ristorante: ${nome}</h2>
-        <p><strong>Nome:</strong> ${nome}</p>
-        <p><strong>Posti:</strong> ${posti}</p>
-        <p><strong>Via:</strong> ${via}</p>
-        <p><strong>Civico:</strong> ${civico}</p>
-        <p><strong>Paese:</strong> ${paese}</p>
-        <p><strong>CAP:</strong> ${cap}</p>
-        <p><strong>Numero di Telefono:</strong> ${telefono}</p>
+        <div class="card-body">
+            <h5 class="card-title">Ristorante: ${nome}</h5>
+            <p class="card-text"><strong>Nome:</strong> ${nome}</p>
+            <p class="card-text"><strong>Posti:</strong> ${posti}</p>
+            <p class="card-text"><strong>Via:</strong> ${via}</p>
+            <p class="card-text"><strong>Civico:</strong> ${civico}</p>
+            <p class="card-text"><strong>Paese:</strong> ${paese}</p>
+            <p class="card-text"><strong>CAP:</strong> ${cap}</p>
+            <p class="card-text"><strong>Numero di Telefono:</strong> ${telefono}</p>
+        </div>
     `;
 
     // Aggiungere il riepilogo dei dati al contenitore
@@ -45,3 +46,4 @@ function registraDati() {
     document.getElementById("cap").value = "";
     document.getElementById("telefono").value = "";
 }
+
