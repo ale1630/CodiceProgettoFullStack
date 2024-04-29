@@ -102,5 +102,91 @@
     </div>
 
     <script src="aggiuntaLocale.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aggiungi il tuo locale</title>
+    <link rel="stylesheet" href="imprenditore.css">
+    <style>
+        /* Rimuovi la classe hidden dalla tabella quando è visibile */
+        #tabella-dati {
+            width: 40%; /* Imposta la larghezza della tabella al 100% del contenitore */
+            border-collapse: collapse; /* Unisce i bordi delle celle */
+            margin-top: 20px; /* Aggiungi spazio sopra la tabella */
+            display: none; /* Nascondi la tabella per impostazione predefinita */
+        }
+
+        /* Stile delle celle della tabella */
+        #tabella-dati td {
+            padding: 10px; /* Aggiungi spazio interno alle celle */
+            border: 1px solid #ddd; /* Aggiungi bordi alle celle */
+        }
+
+        /* Stile degli input nella tabella */
+        #tabella-dati input {
+            width: 100%; /* Imposta la larghezza degli input al 100% della larghezza della cella */
+            padding: 8px; /* Aggiungi spazio intorno ai bordi degli input */
+        }
+
+        /* Stile dei pulsanti nella tabella */
+        #tabella-dati button {
+            padding: 10px 20px; /* Aggiungi spazio intorno al pulsante */
+            font-size: 16px; /* Modifica la dimensione del testo nel pulsante */
+            width: 100%;
+            cursor: pointer; /* Mostra il cursore come indicatore cliccabile */
+            background-color: #26a5408e;
+            color: #fff; /* Colore del testo del pulsante */
+            border: none; /* Rimuove il bordo del pulsante */
+            border-radius: 5px; /* Aggiunge i bordi arrotondati al pulsante */
+        }
+
+        #tabella-dati button:active {
+            background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container pl-0">
+            <strong><h3>THE FORK</h3></strong>
+        </div>
+    </nav>
+
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <h2>Aggiungi il tuo locale</h2>
+        <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
+        <br>
+        <!-- Tabella per l'inserimento dei dati -->
+        <table id="tabella-dati">
+            <!-- Aggiungi i tuoi campi di input qui -->
+        </table>
+        <!-- Contenitore per i riepiloghi dei dati -->
+        <div id="riepiloghi-container"></div>
+    </div>
+
+    <script>
+        function aggiungi() {
+            var tabella = document.getElementById("tabella-dati");
+            tabella.style.display = "table"; // Mostra la tabella impostando il display su "table"
+        }
+
+        function registraDati() {
+            // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
+            var tabella = document.getElementById("tabella-dati");
+            tabella.style.display = "none"; // Nascondi la tabella impostando il display su "none"
+        }
+    </script>
 </body>
 </html>

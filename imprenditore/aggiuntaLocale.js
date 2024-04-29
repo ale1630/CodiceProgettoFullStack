@@ -4,9 +4,14 @@
 // }
 function aggiungi() {
     var tabella = document.getElementById("tabella-dati");
-    tabella.classList.add("visible"); // Aggiungi la classe visible per mostrare la tabella
+    tabella.style.display = "table"; // Mostra la tabella impostando il display su "table"
 }
 
+function registraDati() {
+    // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
+    var tabella = document.getElementById("tabella-dati");
+    tabella.style.display = "none"; // Nascondi la tabella impostando il display su "none"
+}
 // Funzione per registrare i dati e visualizzare il riepilogo
 // function registraDati() {
 //     // Aggiungi qui la logica per registrare i dati e visualizzare il riepilogo
