@@ -66,8 +66,8 @@
 }
 
 .riepilogo {
-    width: calc(48% - 10px); /* Cambiato da "50% - 20px" a "48% - 10px" per gestire lo spazio tra le carte */
-    margin-bottom: 20px;
+    width: 100%; /* Occupa tutta la larghezza del contenitore */
+    margin-bottom: 20px; /* Spazio sotto ogni ristorante */
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
