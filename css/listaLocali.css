@@ -21,7 +21,14 @@
 }
 
 
-/* -------------------- */
+/* ---------------------
+    #CARD LOCALI
+----------------------- */
+.card-body{
+    border-radius: 10px;
+}
+
+
 /* .btn-scopri{
     padding: 10px 20px;
     font-size: 16px;
