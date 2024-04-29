@@ -12,13 +12,12 @@
 }
 
 .navbar {
-    margin: 0; /* Remove margin */
     background-color: #26a5408e;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0px 0px;
 }
 
 .sfondo{
