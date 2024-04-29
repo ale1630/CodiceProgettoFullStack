@@ -54,6 +54,23 @@
             background-color: #216eba; /* Cambia il colore di sfondo del pulsante quando viene premuto */
         }
 
+        /* Stile del nuovo div contenitore */
+        #contenitore-pulsante-riepilogo {
+            display: flex; /* Utilizza il layout flessibile */
+            justify-content: center; /* Centra gli elementi lungo l'asse orizzontale */
+            align-items: center; /* Centra gli elementi lungo l'asse verticale */
+            flex-wrap: wrap; /* Permette il wrapping degli elementi su più righe se necessario */
+            margin-top: 20px; /* Aggiungi spazio sopra il contenitore */
+        }
+
+        /* Stile per il riepilogo dei ristoranti */
+        .riepilogo {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 <body>
@@ -65,8 +82,9 @@
 
     <div class="position-absolute top-50 start-50 translate-middle">
         <h2>Aggiungi il tuo locale</h2>
+        <!-- Pulsante "AGGIUNGI" -->
         <button type="button" onclick="aggiungi()" class="aggiungi">AGGIUNGI</button>
-        <br>
+
         <!-- Tabella per l'inserimento dei dati -->
         <table id="tabella-dati" class="hidden">
             <tr>
@@ -94,8 +112,9 @@
                 <td><button type="button"  class="btn-primary" onclick="registraDati()">Registra</button></td>
             </tr>
         </table>
-        <!-- Contenitore per i riepiloghi dei dati -->
-        <div id="riepiloghi-container"></div>
+
+        <!-- Contenitore per il pulsante "AGGIUNGI" e il riepilogo dei ristoranti -->
+        <div id="contenitore-pulsante-riepilogo"></div>
     </div>
 
     <script src="aggiuntaLocale.js"></script>
