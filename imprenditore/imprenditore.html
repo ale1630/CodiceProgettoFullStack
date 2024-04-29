@@ -43,18 +43,18 @@
     </div>
     <div class="sfondo">
         <div>
-            <form action="#" class="signin-form" method="post">
+            <form action="../loginImprenditore.php" class="signin-form" method="post">
                 <div class="form-group">
-                    <p class="scritta"> Inserisci la tua mail </p>
-                    <input type="text" class="form-control" placeholder="Email" required>
+                    <p class="scritta"> Codice Fiscale </p>
+                    <input type="text" class="form-control" placeholder="CF" name="CF" required>
                 </div>
                 <div class="form-group">
                     <p class="scritta">Inserisci la password</p>
-                    <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                    <input id="password-field" name="password" type="password" class="form-control" placeholder="Password" required>
                     <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="form-control btn btn-primary submit px-3" onclick="accedi()">ACCEDI</button>
+                    <button type="submit" class="form-control btn btn-primary submit px-3">ACCEDI</button>
                 </div>
                 <div class="form-group d-md-flex"></div>
             </form>
