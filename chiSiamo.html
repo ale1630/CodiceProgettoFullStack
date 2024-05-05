@@ -9,11 +9,94 @@
         .navbar {
             background-color: #28a745; /* verde */
         }
+        .navbar-title {
+            font-size: 50px; /* Dimensione del testo desiderata */
+            font-weight: bold; /* Rendi il testo in grassetto, se necessario */
+        }
+        .footer {
+            background-color: #28a745; /* verde */
+        }
+        .home-image-container {
+            position: relative;
+            text-align: center;
+        }
+        .home-image-container img {
+            width: 100%; /* Assicura che l'immagine occupi tutto lo spazio disponibile */
+            height: 700px;
+        }
+        .home-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra per migliorare la leggibilità */
+        }
+        .container-fluid{
+            background-color: rgba(91, 160, 59, 0.365);
+            border-radius: 10px;
+            max-width: 1500px; /* Larghezza massima del container */
+            margin: 0 auto; /* Margini automatici per centrare il container */
+            padding: 20px; /* Padding per il contenuto all'interno del container */
+        }
+
+        .text-align {
+            text-align: left; /* Posiziona il testo e il pulsante a sinistra */
+        }
+        .scritta {
+            font-size: 40px; /* Modifica la dimensione del testo */
+            font-weight: bold; /* Rendi il testo in grassetto */
+            text-align: center;
+            color: #28a745;
+            margin-top: 50px; /* Aggiungi un margine superiore per spaziare dalla riga precedente */
+        }
+        .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team-member {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden; /* Per evitare che il testo della didascalia fuoriesca dall'immagine */
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; /* Rimuove il bordo arrotondato per rendere l'immagine quadrata */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Effetto di transizione al passaggio del mouse */
+}
+
+.team-member:hover img {
+    transform: scale(1.1); /* Effetto di ingrandimento all'hover */
+}
+
+.team-member .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0; /* Rimuove il bordo arrotondato per la didascalia */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover .caption {
+    opacity: 1;
+}
+
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">THE FORK</a>
+        <a class="navbar-brand navbar-title" href="#">THE FORK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,27 +104,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item"> 
-                    <a class="nav-link" href="chiSiamo.html">Chi siamo</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="chiSiamo.html">Chi siamo<span class="sr-only">(Current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/thefork_it/">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
                             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
                         </svg>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="https://www.facebook.com/groups/1138441923824246">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
                         </svg>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="https://twitter.com/FTheFork_it">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
                         </svg>
@@ -53,6 +136,136 @@
             </form>
         </div>
     </nav>
+
+    <!-- Immagine con testo sopra -->
+    <div class="home-image-container">
+        <img src="images/sfondoChiSiamo.jpg" alt="Descrizione dell'immagine">
+        <div class="home-image-text">CHI SIAMO?</div>
+    </div>
+<BR><BR>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Benvenuti in THE FORK!</h2>
+                    <!-- <p>Descrivi qui la tua azienda, la sua storia, la sua missione e i valori fondamentali.</p>
+                    <p>Puoi anche parlare dei membri del team e delle loro competenze.</p> -->
+                </div>
+                <div class="col-md-6">
+                    <img src="images/recensioni.png">
+                </div>
+            </div>
+        </div>
+<br><br>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="images/storia.jpg" height="300px" width="500px">
+        </div>
+        <div class="col-md-6">
+            <h2>La nostra storia</h2>
+            The Fork è stata fondata nel 2016 da Marco e Francesca, due amici appassionati di cucina desiderosi di creare una piattaforma online per facilitare la ricerca di ristoranti e condividere esperienze culinarie.
+            Dopo mesi di sviluppo e test, il sito è stato lanciato con successo, attirando una crescente comunità di appassionati di cibo.
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>I nostri obiettivi</h2>
+            La missione di The Fork è quella di connettere le persone con esperienze gastronomiche autentiche e memorabili,
+            semplificando la ricerca di ristoranti di qualità e incoraggiando la condivisione di recensioni e raccomandazioni
+        </div>
+        <div class="col-md-6">
+            <img src="images/obiettivi.jpg"  height="300px" width="500px">
+        </div>
+    </div>
+</div>
+<br><br>
+<!-- il nostro team -->
+<h3 class="scritta">IL NOSTRO TEAM <HR></h3>
+    <div class="container mt-5">
+        <div class="team">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team1.jpg">
+                        <div class="caption">MARCO (Co-fondatore e CEO): Esperto di informatica con una passione per il cibo, Marco guida lo sviluppo tecnico della piattaforma e si occupa della gestione generale dell'azienda.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team2.jpg">
+                        <div class="caption">FRANSCESCA (Co-fondatrice e Responsabile Contenuti): Chef amatoriale e critica gastronomica autodidatta, Francesca supervisiona i contenuti del sito, curando le recensioni e le raccomandazioni per garantire la qualità e l'autenticità delle informazioni.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team3.jpg">
+                        <div class="caption">LUCA (Responsabile Marketing): Esperto di marketing digitale, Luca si occupa di promuovere The Fork attraverso strategie di marketing online e offline, sviluppando partnership e collaborazioni con aziende e influencer nel settore alimentare.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="team">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team4.jpg">
+                        <div class="caption">ELENA (Responsabile Esperienza Utente): Designer e esperta di esperienza utente, Elena si impegna per creare un'esperienza di navigazione intuitiva e piacevole per gli utenti di GustoMondo, ottimizzando l'interfaccia del sito e l'esperienza di ricerca.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team5.jpg">
+                        <div class="caption">MATTEO (Sviluppatore Backend): Programmatore esperto, Matteo si occupa dello sviluppo e del mantenimento del backend della piattaforma, garantendo la sicurezza e l'affidabilità del sistema.</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img src="images/team6.jpg">
+                        <div class="caption">CHIARA (Sviluppatrice Frontend): Esperta di sviluppo web frontend, Chiara si concentra sull'interfaccia utente del sito, implementando design accattivanti e funzionalità intuitive per gli utenti.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<br><br>
+<footer class="footer text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contatti</h5>
+                <p>Email: theFork@assistenza.com</p>
+                <p>Telefono: 011 59 5332</p>
+                <p>Partita IVA: 08524070011</p>
+            </div>
+            <div class="col-md-6">
+                <h5>Bisogno di Assistenza?</h5>
+                <p><b>Telefono: </b> 011 59 5332</p>
+                <p><b>Email: </b> theFork@assistenza.com</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluid bg-white">
+        <div class="col-auto">
+            <img src="images/carta.png"  alt="Carte di credito accettate" class="img-fluid"  width="150px" height="50px">
+            <img src="images/carta1.png" alt="Carte di credito accettate" class="img-fluid"  width="150px" height="50px">
+            <img src="images/carta2.png" alt="Carte di credito accettate" class="img-fluid"  width="90px" height="50px">
+        </div>
+    </div>
+    <div class="container text-center py-3">
+        <hr class=" riga my-4">
+        <p>The Fork &copy; 2024 All Rights Reserved 2024 P.I.08524070011 | PRIVACY POLICY | COOKIE POLICY</p>
+    </div>
+</footer>
+
+    
 
     <!-- Bootstrap JS e dipendenze jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
