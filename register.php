@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Registrazione completata con successo, reindirizza alla pagina successiva
-            header("Location: locali.php");
+            header("Location: index.html");
             exit();
         } else {
             echo "Errore durante la registrazione: " . $stmt->error;

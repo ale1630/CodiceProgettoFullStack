@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #26a5408e;
+    overflow: hidden;
+    display: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+/* -----------------
+#bottone personale
+---------------- */
+
+.btnPersonale{
+    text-align: center;
+    padding: 10px 100px;
+    font-size: 16px;
+    background-color: rgb(95, 171, 224);; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo del pulsante */
+    border: none;
+    border-radius: 5px;
+}
+
+/* ---------------------
+    #FOOTER
+----------------------- */
+.footer{
+    background-color: #26a5408e;
+}
