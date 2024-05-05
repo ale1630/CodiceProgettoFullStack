@@ -28,12 +28,12 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="login-wrap p-0">
                             <h3 class="mb-4 text-center"><b>Hai già un account?</b></h3>
-                            <form action="#" class="signin-form">
+                            <form action="login.php" class="signin-form" method="post">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email" required>
+                                    <input type="text" class="form-control" placeholder="Email" name="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                                    <input id="password-field" type="password" class="form-control" placeholder="Password" name="password" required>
                                     <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                                 </div>
                                 <div class="form-group">
@@ -46,7 +46,7 @@
                                 <b> Non hai un account?</b> <a href="#" class="register-link">
                                     <br><br>
                                     <div class="form-group">
-                                        <button type="submit" class="form-control btn btn-primary submit px-3 register-btn">ISCRIVITI</button>
+                                        <a href="registrazione.html" class="form-control btn btn-primary submit px-3 register-btn">ISCRIVITI</a>
                                     </div>
                                 </a>
                             </div>
