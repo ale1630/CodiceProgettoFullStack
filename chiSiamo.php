@@ -1,3 +1,29 @@
+<?php
+session_start();
+require_once "database.php";
+
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : null;
+
+// Se $email è definito, recupera i dettagli dell'utente
+if ($email) {
+    // Query per recuperare i dettagli dell'utente
+    $sql_utente = "SELECT * FROM cliente WHERE email = ?";
+    $stmt_utente = $conn->prepare($sql_utente);
+    $stmt_utente->bind_param("s", $email);
+    $stmt_utente->execute();
+    $result_utente = $stmt_utente->get_result();
+
+    // Se l'utente esiste, mostra il saluto
+    if ($result_utente->num_rows > 0) {
+        $row_utente = $result_utente->fetch_assoc();
+        $saluto = "Ciao " . $row_utente["nome"];
+    } else {
+        $saluto = "Ciao " . $email;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,14 +126,14 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-      
+    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="chiSiamo.html">Chi siamo<span class="sr-only">(Current)</span></a>
+                    <a class="nav-link" href="chiSiamo.php">Chi siamo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.instagram.com/thefork_it/">
@@ -124,16 +150,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/FTheFork_it">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                        </svg>
-                    </a>
+                    <a class="nav-link" href="contatti.html">Contatti</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-outline-light my-2 my-sm-0 text-white"  href="login.html" type="submit">ACCEDI</button>
-            </form>
+            <div class="my-2 my-lg-0">
+                <?php if (isset($_SESSION['email'])): ?>
+                    <span class="text-light mr-3">Ciao <?php echo $_SESSION['email']; ?></span>
+                    <button id="logoutButton" class="btn btn-outline-light my-2 my-sm-0">Logout</button>
+                <?php else: ?>
+                    <a class="btn btn-outline-light my-2 my-sm-0" href="login.html">Accedi</a>
+                <?php endif; ?>
+            </div>
         </div>
     </nav>
 

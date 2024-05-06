@@ -16,13 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
             $_SESSION['codiceOperatore'] = $codiceOperatore;
-            header("Location: locali.php");
+            header("Location: areaAdmin.php");
             exit();
         } else {
-            header("Location: index.html");
+            header("Location: loginAdmin.php");
         }
     } else {
-        header("Location: index.html");
+        header("Location: loginAdmin.php");
 
     }
 

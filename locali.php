@@ -2,24 +2,20 @@
 session_start();
 require_once "database.php";
 
-$email = isset($_SESSION['email']) ? $_SESSION['email'] : null;
+// Controlla se l'utente è loggato
+if (!isset($_SESSION['email'])) {
+    // Reindirizza l'utente alla pagina di accesso
+    header("Location: login.html");
+    exit(); // Assicura che lo script si interrompa dopo il reindirizzamento
+}
 
-// Se $nome è definito, recupera i dettagli dell'utente
-if ($email) {
-    // Query per recuperare i dettagli dell'utente
-    $sql_utente = "SELECT * FROM cliente WHERE email = ?";
-    $stmt_utente = $conn->prepare($sql_utente);
-    $stmt_utente->bind_param("s", $email);
-    $stmt_utente->execute();
-    $result_utente = $stmt_utente->get_result();
+$email = $_SESSION['email'];
 
-    // Se l'utente esiste, mostra il saluto
-    if ($result_utente->num_rows > 0) {
-        $row_utente = $result_utente->fetch_assoc();
-        $saluto = "Ciao " . $row_utente["nome"];
-    } else {
-        $saluto = "Ciao " . $email;
-    }
+// Recupera il nome dell'utente dalla sessione
+if (isset($_SESSION['nome'])) {
+    $saluto = "Ciao " . $_SESSION['nome'];
+} else {
+    $saluto = "Ciao " . $email;
 }
 
 // Recupera tutte le ricette indipendentemente dall'autenticazione dell'utente
@@ -72,6 +68,9 @@ $result_locale = $stmt_locale->get_result();
                         Scopri il locale più adatto a te e prenota una cena da sogno!
                         <br>   
                     </p>
+                    <div class='areaPersonale d-flex justify-content-center mt-3'>
+                        <a type='button' class='btnPersonale' href='index.php'>Home</a>
+                    </div>
                 </div>
             </div>
         </div>
