@@ -67,3 +67,75 @@ function registraDati() {
     // Aggiungi il riepilogo al riepilogoRow corrente
     riepilogoRow.appendChild(riepilogoDiv);
 }
+
+const inputPaese = document.getElementById('inputPaese');
+const suggerimentiPaese = document.getElementById('suggerimentiPaese');
+
+
+
+// Funzione per inviare una richiesta AJAX al server e ottenere i suggerimenti
+function ottieniSuggerimenti() {
+    const valoreInput = inputPaese.value.trim();
+    if (valoreInput.length === 0) {
+        suggerimentiPaese.innerHTML = '';
+        return;
+    }
+
+    // Invia una richiesta POST al server per ottenere i suggerimenti
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'suggerimenti_paese.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            const suggerimenti = JSON.parse(xhr.responseText);
+            mostraSuggerimenti(suggerimenti);
+        }
+    };
+    xhr.send('query=' + encodeURIComponent(valoreInput));
+}
+
+// Funzione per mostrare i suggerimenti all'utente
+function mostraSuggerimenti(suggerimenti) {
+    suggerimentiPaese.innerHTML = '';
+    suggerimenti.forEach(function (suggerimento) {
+        const suggerimentoElemento = document.createElement('div');
+        suggerimentoElemento.textContent = suggerimento;
+        suggerimentoElemento.classList.add('suggerimento');
+        suggerimentoElemento.addEventListener('click', function () {
+            inputPaese.value = suggerimento;
+            suggerimentiPaese.innerHTML = '';
+        });
+        suggerimentiPaese.appendChild(suggerimentoElemento);
+    });
+}
+
+// Aggiungi un gestore degli eventi per l'evento di input
+inputPaese.addEventListener('input', ottieniSuggerimenti);
+
+// Aggiunta in aggiuntaLocale.js
+
+document.getElementById("inputPaese").addEventListener("input", function() {
+    var input = this.value.trim(); // Rimuovi spazi vuoti all'inizio e alla fine
+    var suggerimentiDiv = document.getElementById("suggerimentiPaese");
+    suggerimentiDiv.innerHTML = "";
+
+    fetch("suggerimenti_paese.php?q=" + input)
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(suggerimento => {
+                var suggerimentoDiv = document.createElement("div");
+                suggerimentoDiv.textContent = suggerimento.nome; // Visualizza solo il nome del paese
+                suggerimentoDiv.dataset.id = suggerimento.id; // Imposta l'id del paese come attributo dataset
+                suggerimentoDiv.classList.add("suggerimento");
+                suggerimentoDiv.addEventListener("click", function() {
+                    document.getElementById("inputPaese").value = this.textContent;
+                    document.getElementById("idPaese").value = this.dataset.id; // Imposta l'id del paese nell'input nascosto
+                    suggerimentiDiv.innerHTML = "";
+                });
+                suggerimentiDiv.appendChild(suggerimentoDiv);
+            });
+        });
+});
+
+
+

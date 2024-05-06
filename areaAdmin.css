@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+.navbar {
+    background-color: #a572268e;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+.home{
+    position: absolute;
+  top: 80px; /* Distanza dal bordo superiore */
+  right: 10px;
+}
+
+#inputAggiungiLocali{
+    border-radius: 5px; 
+    border-color: white;
+    height: 22px;
+    width: 260px;
+}
+
+#inputAggiungiLocali::placeholder{
+    text-align: center; 
+    opacity: 1; 
+}
+
+#inputAggiungi {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff6600; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #inputAggiungi:hover {
+    background-color: #ff6600; 
+  }
+  
+  #inputAggiungi:active {
+    background-color: #ff6600;
+  }
+  
+  #inputAggiungi:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+  }
+  
+  #inputAggiungi span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+#infoPrenotazione{
+    float:left;
+ 
+  }
+#bottoniPrenotazione{
+    float:left;
+}
+
+#containerPrenotazione{
+    padding: 20px;
+    float:left;
+    border: 3px solid #ff6600;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+#bottoneRifiuta {
+    background-color: #ff4d4d; /* Colore di sfondo rosso */
+    color: white; /* Colore del testo bianco */
+    padding: 10px 20px; /* Padding interno */
+    border: none; /* Nessun bordo */
+    border-radius: 13px; /* Bordi arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s; /* Effetto di transizione sul cambio di colore */
+    width: 110px; 
+}
+
+#bottoneRifiuta:hover {
+    background-color: #ff6666; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+#bottoneAccetta {
+    background-color: #4CAF50; /* Colore di sfondo verde */
+    color: white; /* Colore del testo bianco */
+    padding: 10px 20px; /* Padding interno */
+    border: none; /* Nessun bordo */
+    border-radius: 13px; /* Bordi arrotondati */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s; /* Effetto di transizione sul cambio di colore */
+    width: 110px;
+}
+
+#bottoneAccetta:hover {
+    background-color: #45a049; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+

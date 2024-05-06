@@ -14,13 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
             $_SESSION['email'] = $email;
-            header("Location: locali.php");
+            header("Location: index.php");
             exit();
         } else {
-            header("Location: index.html");
+            header("Location: login.php");
         }
     } else {
-        header("Location: index.html");
+        header("Location: login.php");
 
     }
 
