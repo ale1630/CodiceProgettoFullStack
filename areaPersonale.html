@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area personale</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        .home-image-container {
+            position: relative;
+            text-align: center;
+        }
+        .home-image-container img {
+            width: 100%; /* Assicura che l'immagine occupi tutto lo spazio disponibile */
+            height: 700px;
+        }
+        .home-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra per migliorare la leggibilità */
+        }
+        .container-fluid{
+            background-color: rgba(91, 160, 59, 0.365);
+            border-radius: 10px;
+            max-width: 1500px; /* Larghezza massima del container */
+            margin: 0 auto; /* Margini automatici per centrare il container */
+            padding: 20px; /* Padding per il contenuto all'interno del container */
+        }
+        .titolo {
+            font-size: 40px; /* Modifica la dimensione del testo */
+            font-weight: bold; /* Rendi il testo in grassetto */
+            text-align: left;
+            color: #28a745;
+            padding-left: 0%;
+        }
+        .scritta {
+            font-size: 20px; /* Modifica la dimensione del testo */
+            font-weight: bold; 
+            text-align: center;
+            color: #28a745;
+            margin-top: 50px; /* Aggiungi un margine superiore per spaziare dalla riga precedente */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 10%; /* Aggiunto un margine sinistro del 15% */
+            margin-right: 15%; /* Aggiunto un margine destro del 15% */
+        }
+
+        .sfondo {
+            border: 2px solid #28a745; /* Aggiunto un bordo di 2px solid verde */
+            padding: 20px; /* Aggiunto spazio interno per separare il contenuto dal bordo */
+            width: 500px;
+            border-radius: 10px;
+        }
+        .indietro{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Immagine con testo sopra -->
+<div class="home-image-container">
+    <img src="images/areaPersonale.jpg" alt="Descrizione dell'immagine">
+    <div class="home-image-text">AREA PERSONALE
+        <!-- <P>Imprenditore</P> -->
+    </div>
+</div>
+<br><br>
+<div class="areaPersonale d-flex justify-content-center">
+    <button type="button" class="indietro btn btn-success" onclick="">TORNA AI LOCALI</button> <!--deve tornare alla pagina dei locali-->
+</div>
+<br><br>
+<h2 class="titolo">Prenotazioni Future<hr class="riga"></h2>
+<br><br>
+<div class="container  justify-content-center mt-3">
+    <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="scritta">Nome</th>
+                                <th class="scritta">Data</th>
+                                <th class="scritta">Ora</th>
+                                <th class="scritta">Posti</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Qui inserisci dinamicamente le righe della tabella con le informazioni delle prenotazioni -->
+                            <tr>
+                                <td>Ristorante ABC</td>
+                                <td>2024-05-06</td>
+                                <td>19:30</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="submit" class="form-control btn btn-danger submit px-3">ELIMINA LA TUA PRENOTAZIONE</button>
+                </div>
+            </div>
+    </div>
+</div>
+<br><br>
+</body>
+</html>

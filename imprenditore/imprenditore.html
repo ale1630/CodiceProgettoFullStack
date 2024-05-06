@@ -1,65 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="imprenditore.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FORK</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-image: url('sfondo.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Per fissare l'immagine di sfondo */
-            background-color: #f0f0f0; /* Colore di sfondo */
+
+        .home-image-container {
+            position: relative;
+            text-align: center;
         }
-        .scritta{
-            color:#f0f0f0;
+        .home-image-container img {
+            width: 100%; /* Assicura che l'immagine occupi tutto lo spazio disponibile */
+            height: 700px;
         }
-        .signin-form {
-            background-color: #26a5408e;
+        .home-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 55px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombra per migliorare la leggibilità */
         }
-        .navbar{
-            background-color: #26a5408e;
+        .container-fluid{
+            background-color: rgba(91, 160, 59, 0.365);
+            border-radius: 10px;
+            max-width: 1500px; /* Larghezza massima del container */
+            margin: 0 auto; /* Margini automatici per centrare il container */
+            padding: 20px; /* Padding per il contenuto all'interno del container */
         }
+
+        .scritta {
+            font-size: 20px; /* Modifica la dimensione del testo */
+            font-weight: bold; /* Rendi il testo in grassetto */
+            text-align: center;
+            color: #28a745;
+            margin-top: 50px; /* Aggiungi un margine superiore per spaziare dalla riga precedente */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-left: 10%; /* Aggiunto un margine sinistro del 15% */
+            margin-right: 15%; /* Aggiunto un margine destro del 15% */
+        }
+
+        .sfondo {
+            border: 2px solid #28a745; /* Aggiunto un bordo di 2px solid verde */
+            padding: 20px; /* Aggiunto spazio interno per separare il contenuto dal bordo */
+            width: 500px;
+            border-radius: 10px;
+        }
+
+
     </style>
 </head>
 <body>
-<!--------------------------------------------------------------
-# navbar
--------------------------------------------------------------->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <!-- <a class="navbar-brand" href="#"><img class="bbMare" src="immagini/logo.png" width="200px" height="60px"style="margin-left: 160px;"></a> -->
-    <div class="container pl-0">
-        <strong> <H3>THE FORK</H3></strong>
+<!-- Immagine con testo sopra -->
+<div class="home-image-container">
+    <img src="sfondo.jpg" alt="Descrizione dell'immagine">
+    <div class="home-image-text">AREA RISERVATA
+        <P>Imprenditore</P>
     </div>
-</nav>
-<br>
-<br>
-    <div class="scritta">
-       <b> 
-        PARTE RISERVATA: 
-        <p class="imprenditore">
-            imprenditore
-        </p>  
-       </b> 
-    </div>
-    <div class="sfondo">
-        <div>
-            <form action="../loginImprenditore.php" class="signin-form" method="post">
-                <div class="form-group">
-                    <p class="scritta"> Codice Fiscale </p>
-                    <input type="text" class="form-control" placeholder="CF" name="CF" required>
-                </div>
-                <div class="form-group">
-                    <p class="scritta">Inserisci la password</p>
-                    <input id="password-field" name="password" type="password" class="form-control" placeholder="Password" required>
-                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="form-control btn btn-primary submit px-3">ACCEDI</button>
-                </div>
-                <div class="form-group d-md-flex"></div>
-            </form>
-
+</div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="sfondo">
+                <form action="#" class="signin-form" method="post">
+                    <div class="form-group">
+                        <p class="scritta">Inserisci la tua mail</p>
+                        <input type="text" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <p class="scritta">Inserisci la password</p>
+                        <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div><br>
+                    <div class="form-group">
+                        <button type="submit" class="form-control btn btn-success submit px-3">ACCEDI</button>
+                    </div>
+                    <div class="form-group d-md-flex"></div>
+                </form>
+            </div>
         </div>
-    </div> <!-- Aggiungi questa divisione per l'immagine di sfondo -->
+    </div>
+</div>
+<br><br>
 </body>
 </html>
